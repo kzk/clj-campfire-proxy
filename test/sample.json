@@ -1,0 +1,56 @@
+{
+    "node": {
+        "provider_id": 999,
+        "name": "i-12345678",
+        "state": 2,
+        "details": {
+            "status": ["running"],
+            "productcode": ["[]"],
+            "instanceId": ["i-12345678"],
+            "dns_name": ["ec2-174-123-210-12.compute-1.amazonaws.com"],
+            "instancetype": ["m1.small"],
+            "launchdatetime": ["2010-03-30T01:23:45.000Z"],
+            "imageId": ["ami-12345678"],
+            "kernelid": ["aki-12345678"],
+            "ownerId ": ["123456789012"],
+            "keyname": ["None"],
+            "lcid": ["i-12345678"],
+            "groups ": ["default"],
+            "launchindex": ["0"],
+            "reservationId": ["r-12345678"],
+            "private_dns": ["domU-12-34-56-78-90-AB.compute-1.internal"],
+            "availability": ["us-east-1b"],
+            "monitor:host": ["Thu, 01 Jan 1970 00:00:00 GMT", "Tue, 13 Apr 2010 12:34:56 GMT", "0"],
+            "ramdiskid": ["ari-12345678"]
+        },
+        "provider_name": "EC2 (us-east-1)",
+        "provider_id": "p827a7",
+        "active": 1,
+        "ipaddress": "174.123.210.12",
+        "id": 12345,
+        "tags": ["web", "agent"],
+        "color": "#fff",
+        "agent_state": "DISCONNECTED",
+        "provider_type": 3
+    },
+    "account": "YourAccount",
+    "severity": "ERROR",
+    "url": "http://example.com/web/hook/",
+    "state_change": {
+        "current": {
+            "status": "Error",
+            "duration": 50.0,
+            "status_details": "GET on http://127.0.0.1:80/server-status?auto returned connection refused",
+            "time": "2010-04-14T01:16:22" 
+        },
+        "previous": {
+            "status": "Ok",
+            "duration": 49.0,
+            "status_details": "ReqPerSec: 0.02",
+            "time": "2010-04-14T01:13:52" 
+        }
+    },
+    "method": "POST",
+    "type": "APACHE",
+    "check": "APACHE - 127.0.0.1:80" 
+}
